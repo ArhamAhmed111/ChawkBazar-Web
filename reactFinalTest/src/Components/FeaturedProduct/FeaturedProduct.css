@@ -1,0 +1,113 @@
+.featured-cat{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.featured-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 8px;
+    width: 99%;
+}
+
+.featured-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: 596px;
+    height: 734px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.small-card{
+    height: 362px;
+    width: 286px;
+}
+
+
+
+.featured-card:hover {
+    transform: translateY(-5px);
+}
+
+.featured-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.featured-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.featured-price {
+    color: #333;
+    font-weight: bold;
+}
+.big-Card{
+    height: 734px;
+    width: 268px;
+}
+.big-Card>.big-card-img{
+    position: relative;
+    height: 632px;
+}
+.big-Card>.big-card-img>img{
+    position: relative;
+    top: 200px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .featured-container {
+        flex-direction: column; /* Stack cards in a column on smaller screens */
+        align-items: center; /* Center align cards */
+    }
+
+    .featured-card {
+         /* Adjust width for smaller screens */
+         height: 362px;
+         width: 286px; /* Allow height to adjust based on content */
+    }
+
+    .featured-image {
+        height: 50%; /* Adjust image height for responsive cards */
+    }
+}
+@media (max-width: 480px) {
+    .featured-cat {
+        margin-left: 20px; /* Reduce left margin */
+        margin-top: 20px; /* Reduce top margin */
+    }
+
+    .featured-container {
+        margin-left: 0; /* Remove left margin */
+        justify-content: center; /* Center the container */
+    }
+
+    .featured-card {
+        width: 100%; /* Full width for mobile */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .featured-title {
+        font-size: 1rem; /* Smaller title size */
+    }
+
+    .featured-price {
+        font-size: 0.9rem; /* Smaller price size */
+    }
+
+    .big-Card {
+        width: 100%; /* Full width for mobile */
+    }
+
+    .big-Card > .big-card-img {
+        height: auto; /* Allow height to adjust */
+    }
+}

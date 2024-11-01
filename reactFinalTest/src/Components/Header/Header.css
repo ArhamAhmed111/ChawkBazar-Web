@@ -1,0 +1,113 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.nav-logo {
+    width: 23%;
+}
+
+.nav-logo img {
+    max-height: 50px;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    font-size: 24px; /* Adjust icon size */
+    display: none; /* Hidden by default */
+}
+
+.nav-menu {
+    display: flex; /* Use flexbox for the menu */
+    justify-content: space-between; /* Space between links and button */
+    flex-grow: 1; /* Allow menu to grow */
+}
+
+.nav-menu ul {
+    display: flex; /* Use flexbox for the list */
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; /* Allow the links to take available space */
+}
+
+.nav-menu li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.3s;
+    padding: 10px; /* Add padding for better touch targets */
+}
+
+
+
+.nav-btn {
+    display: flex; /* Flexbox for button alignment */
+    align-items: center; /* Center the button vertically */
+}
+
+
+.nav-btn > a> button {
+    /* background-color: blue; */
+    color: black;
+    border-radius: 10px;
+    height: 44px;
+    width: 78px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.nav-btn >a> button:hover {
+
+    color: lightgray; /* Change text color on hover */
+}
+
+/* If the button still doesn't change color, check for any other conflicting styles */
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex; /* Show toggle icon on mobile */
+    }
+
+    .nav-menu {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width for mobile menu */
+        position: absolute; /* Absolute positioning for dropdown */
+        background-color: white; /* Background color */
+        top: 60px; /* Position below the navbar */
+        left: 0; /* Align left */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+    }
+
+    .nav-menu.open {
+        display: flex; /* Show menu when open */
+    }
+
+    .nav-menu ul {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width for menu items */
+    }
+
+    .nav-menu li {
+        margin: 10px 0; /* Vertical spacing for links */
+        text-align: center; /* Center align links */
+    }
+}

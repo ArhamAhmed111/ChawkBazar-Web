@@ -1,0 +1,101 @@
+.Flash-container {
+    margin: 20px auto;
+    width: 96%;
+    height: auto;
+}
+
+.Flash-container > h1 {
+    width: fit-content;
+    margin-left: 11px;
+}
+
+.Slider {
+    margin: 0 auto;
+}
+
+.Flash-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin: 10px; /* Margin for spacing */
+}
+
+.Flash-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.flash-img {
+    width: 100%;
+    height: auto; /* Change to auto for better responsiveness */
+    max-height: 284px; /* Maintain maximum height */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s;
+}
+
+.flash-title {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.flash-description {
+    font-size: 0.9rem; /* Adjusted font size */
+    color: #666;
+    margin: 10px 0;
+}
+
+.flash-price {
+    font-size: 1rem; /* Adjusted font size */
+    font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .Flash-container {
+        margin-top: 30px; /* Added top margin for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .Flash-container {
+        margin-top: 364px; /* Added top margin for small screens */
+    }
+
+    .flash-title {
+        font-size: 1.1rem; /* Slightly smaller title */
+    }
+
+    .flash-description {
+        font-size: 0.8rem; /* Slightly smaller description */
+    }
+
+    .flash-price {
+        font-size: 0.9rem; /* Slightly smaller price */
+    }
+}
+
+@media (max-width: 480px) {
+    .Flash-container {
+        margin-top: 150px; /* Increased top margin for very small screens */
+    }
+
+    .flash-title {
+        font-size: 1rem; /* Further reduce title size */
+    }
+
+    .flash-description {
+        font-size: 0.75rem; /* Further reduce description size */
+    }
+
+    .flash-price {
+        font-size: 0.8rem; /* Further reduce price size */
+    }
+}

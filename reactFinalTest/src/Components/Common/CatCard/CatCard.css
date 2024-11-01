@@ -1,0 +1,55 @@
+.slider-container {
+    margin: 20px auto;
+    width: 96%;
+}
+.slider-container>h1{
+    width: fit-content;
+    
+    margin-left: 11px;
+}
+.category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin: 10px; /* Added margin for spacing */
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cat-card-img {
+    width: 100%;
+    height: 284px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s;
+}
+
+.cat-card-name {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.error {
+    text-align: center;
+    font-size: 1.5rem;
+    color: red;
+    margin-top: 20px;
+}

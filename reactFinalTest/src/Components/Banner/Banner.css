@@ -1,0 +1,29 @@
+
+.carousel-item img {
+    height: 500px; 
+    object-fit: cover; 
+  }
+  
+  .carousel {
+    margin: 20px 0; 
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); 
+    color: white; 
+  }
+  .carousel-item img {
+    height: auto; /* Allow height to adjust based on the width */
+    max-height: 500px; /* Set a max height */
+    width: 100%; /* Ensure the image takes the full width */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
+
+.carousel {
+    margin: 20px 0; 
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); 
+    color: white; 
+}
